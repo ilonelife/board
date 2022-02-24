@@ -9,14 +9,12 @@
     SET
         view_count = view_count + 1
     WHERE
-        _id = ".$id."
-    ";
+        _id = ".$id;
 
     $conn->query($update_sql);
 
     $sql = "
-    SELECT _id,name,title,content FROM board WHERE _id = ".$id."
-    ";
+    SELECT _id,name,title,content FROM board WHERE _id = ".$id;
 
     $result = $conn->query($sql);
 
