@@ -16,6 +16,7 @@
             <tr>
                 <td>번호</td>
                 <td>제목</td>
+                <td>내용</td>
                 <td>작성자</td>
             </tr>
 
@@ -29,8 +30,9 @@
                     <?php echo $row["title"]?>
                     <a href="delete.php?_id=<?php echo $row["_id"]?>"> [삭제] </a>
                 </td>
-                <td><?php echo $row["name"]?>
-                </td>
+                <td><?php echo $row["content"]?></td>
+                <td><?php echo $row["name"]?></td>
+
             </tr> 
 <?php 
     }
