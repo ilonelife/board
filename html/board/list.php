@@ -25,8 +25,12 @@
  ?>
             <tr>
                 <td><?php echo $row["_id"]?></td>
-                <td><?php echo $row["title"]?></td>
-                <td><?php echo $row["name"]?></td>
+                <td>
+                    <?php echo $row["title"]?>
+                    <a href="delete.php?_id=<?php echo $row["_id"]?>"> [삭제] </a>
+                </td>
+                <td><?php echo $row["name"]?>
+                </td>
             </tr> 
 <?php 
     }
