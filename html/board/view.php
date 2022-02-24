@@ -7,12 +7,13 @@
     SELECT _id,name,title,content FROM board WHERE _id = ".$id."
     ";
 
-
     $result = $conn->query($sql);
 
     $row = $result->fetch_row();
 
-   var_dump($row);
+ //   exit();
+
+//  var_dump($row);
 
     $conn->close();
 ?>
@@ -39,8 +40,7 @@
 
         </table>
         <br />
-
+        <a href="edit.php?_id=<?php echo $id?>">수정</a>
         <a href="list.php">목록으로</a>
-
     </body>
 </html>
