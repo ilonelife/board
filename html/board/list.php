@@ -14,6 +14,10 @@
 
    // echo $now_page;
    // print_r($total_result->fetch_row());
+
+   // now_page 가 없을 경우 1 로 설정
+   if($now_page == '')
+   $now_page = 1;
  
     $sql = "
     SELECT 
