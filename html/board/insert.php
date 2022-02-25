@@ -7,13 +7,10 @@ $title = $_POST["title"];
 $content = $_POST["content"];
 
 $sql = "
-INSERT INTO board (name,title,content)
+INSERT INTO board (name,title, content)
 VALUES ('". $name ."','". $title ."','". $content ."')
 ";
 
-//echo $sql;
-
-// exit();
 
 $conn->query($sql);
 

@@ -12,8 +12,7 @@
     $total_count = $total_row[0];  // 전체 게시물 수
     $total_page_count = ceil($total_count/$config_list_set_count);
 
-    echo $now_page;
-
+   // echo $now_page;
    // print_r($total_result->fetch_row());
  
     $sql = "
@@ -28,7 +27,7 @@
     LIMIT ".$config_list_set_count * ($now_page-1).",".$config_list_set_count."
     ";
 
-   echo $sql;
+   //echo $sql;
   //  exit();
 
     $result = $conn->query($sql);
@@ -94,7 +93,7 @@
 
                 if($i == $now_page)
                 {
-                    echo "<b>]";
+                    echo "</b>]";
                 }
 
             }
